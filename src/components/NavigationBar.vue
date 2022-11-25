@@ -32,9 +32,15 @@
             <div class="dropdown">
                 <button class="dropbtn"><img src="../assets/352018_apps_icon.png"/></button>
                 <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <a href="#"><img src="../assets/gmail.png"/><span>Gmail</span></a>
+                    <a href="#"><img src="../assets/drive.png"/><span>Drive</span></a>
+                    <a href="#"><img src="../assets/Chrome-logo-1.png" /><span>Chrome</span></a>
+                    <a href="#"><img /><span>Earth</span></a>
+                    <a href="#"><img /><span>Forms</span></a>
+                    <a href="#"><img /><span>Twitter</span></a>
+                    <a href="#"><img /><span>Facebook</span></a>
+                    <a href="#"><img /><span>Instagram</span></a>
+                    <a href="#"><img /><span>LinkedIn</span></a>
                 </div>
             </div>
             <button class="sign-up">Sign Up</button>
@@ -64,10 +70,13 @@ export default {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #bbb;
 }
 
 .sidebar-logo {
+    margin: 0;
+    height: 100%;
     display: flex;
     width: 250px;
     justify-content: space-around;
@@ -75,9 +84,9 @@ export default {
 }
 
 .app-navbar-access {
-    margin: 0 8px 0 0;
+    margin: 0 16px 0 0;
     display: flex;
-    width: 160px;
+    height: 100%;
     justify-content: space-around;
     align-items: center;
 }
@@ -88,7 +97,7 @@ export default {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
     overflow-x: hidden;
@@ -163,6 +172,7 @@ export default {
     background-color: #fff;
     padding: 8px;
     border: none;
+    margin-right: 12px;
 }
 
 .dropbtn img {
@@ -177,35 +187,62 @@ export default {
 }
 
 .dropdown-content {
+    width: 312px;
+    border-radius: 8px;
+    padding: 10px 20px 0 14px;
     display: none;
+    /* justify-content: left; */
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    text-align: center;
 }
 
 .dropdown-content a {
+    border-radius: 8px;
+    height: 64px;
+    width: 64px;
+    padding: 6px;
+    margin: 4px;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content img {
+    height: 32px;
+    width: auto;
+    margin-bottom: 8px;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
 
-.dropdown:hover .dropbtn {background-color: #bbb;}
+.dropdown:hover .dropdown-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+    /* float: left; */
+    margin-left: -160px;
+    margin-top: 6px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #bbb;
+}
 
 .sign-up {
+    width: 132px;
     font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
     font-weight: 500;
     border: none;
     border-radius: 4px;
-    width: 96px;
     color: #fff;
-    padding: 9px 23px;
+    padding: 11px 24px;
     background-color: #1a73e8;
 }
 

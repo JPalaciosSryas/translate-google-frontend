@@ -11,15 +11,15 @@
         <div class="dropdown">
           <button class="dropbtn"><span class="material-symbols-outlined">expand_more</span></button>
           <div class="dropdown-content">
-              <a href="#">Gmail</a>
-              <a href="#">Drive</a>
-              <a href="#">Chrome</a>
-              <a href="#">Facebook</a>
-              <a href="#">Twitter</a>
-              <a href="#">Instagram</a>
-              <a href="#">TikTok</a>
-              <a href="#">LinkedIn</a>
-              <a href="#">Snapchat</a>
+              <a href="#">Português</a>
+              <a href="#">Deutsch</a>
+              <a href="#">Nederlandse</a>
+              <a href="#">Svenska</a>
+              <a href="#">Català</a>
+              <a href="#">Polsky</a>
+              <a href="#">Magyar</a>
+              <a href="#">Русский</a>
+              <a href="#">ελληνική</a>
           </div>
         </div>
       </div>
@@ -42,9 +42,15 @@
         <div class="dropdown">
           <button class="dropbtn"><span class="material-symbols-outlined">expand_more</span></button>
           <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+            <a href="#">Português</a>
+              <a href="#">Deutsch</a>
+              <a href="#">Nederlandse</a>
+              <a href="#">Svenska</a>
+              <a href="#">Català</a>
+              <a href="#">Polsky</a>
+              <a href="#">Magyar</a>
+              <a href="#">Русский</a>
+              <a href="#">ελληνική</a>
           </div>
         </div>
       </div>
@@ -61,7 +67,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'TranslateText',
   data() {
     return {
       message: '',
@@ -79,12 +85,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .main-container {
-  display:flex;
+  margin: 0 auto;
+  display: flex;
   border: 1px solid #bbb;
   border-radius: 8px;
-  margin: 0 auto;
   width: 1260px;
   height: 225px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .left-side {
@@ -155,7 +162,7 @@ a {
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 3;
 }
 
 .dropdown-content a {
@@ -190,7 +197,7 @@ a {
   margin: 30px auto 0;
   border: none;
   font-size: 24px;
-  color: #666;
+  color: #333;
   resize: none;
 }
 

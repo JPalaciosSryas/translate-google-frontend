@@ -4,8 +4,8 @@
       <NavigationBar />
       <div class="navInside">
         <div class="navInside-btns">
-          <button class="navInside-btn"><router-link to="/">Home</router-link></button>
-          <button class="navInside-btn"><router-link to="/about">About</router-link></button>
+          <button class="navInside-btn"><router-link to="/">Text</router-link></button>
+          <button class="navInside-btn"><router-link to="/about">Documents</router-link></button>
         </div>
         <div class="view">
           <router-view/>
@@ -29,8 +29,17 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
 #app {
+  box-sizing: border-box;
+  top: 0;
+  width: 1350px;
   margin: 0;
+  padding: 0;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,10 +48,15 @@ export default {
 }
 
 .nav {
+  width: inherit;
+  margin: 0 auto;
   padding: 0;
+  position: absolute;
+  z-index: 5;
 }
 
 .navInside {
+  margin: 0;
   display: flex;
   justify-content: flex-start;
   height: 108px;
@@ -51,8 +65,9 @@ export default {
 }
 
 .navInside-btns {
+  margin: 0;
   position: absolute;
-  z-index: 10;
+  z-index: 2;
   margin-left: 27px;
 }
 
@@ -80,6 +95,6 @@ export default {
   margin: 72px auto 0;
   width: 1332px;
   position: absolute;
-  z-index: 2;
+  z-index: 0;
 }
 </style>
