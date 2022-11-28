@@ -5,7 +5,8 @@
       <div class="navInside">
         <div class="navInside-btns">
           <button class="navInside-btn"><router-link to="/">Text</router-link></button>
-          <button class="navInside-btn"><router-link to="/about">Documents</router-link></button>
+          <button class="navInside-btn"><router-link to="/documents">Documents</router-link></button>
+          <button class="navInside-btn"><router-link to="/web-sites">Web Sites</router-link></button>
         </div>
         <div class="view">
           <router-view/>

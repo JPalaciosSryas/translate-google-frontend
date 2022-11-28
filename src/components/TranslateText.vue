@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div class="left-side">
+    <div class="right-side">
       <div class="navbar">
         <ul class="navbar-list">
           <li>Detect Language</li>
@@ -94,7 +94,7 @@ export default {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.left-side {
+.left-side, .right-side {
   margin: 0;
   height: 100%;
   width: 50%;

@@ -244,6 +244,7 @@ export default {
     color: #fff;
     padding: 11px 24px;
     background-color: #1a73e8;
+    cursor: pointer;
 }
 
 </style>

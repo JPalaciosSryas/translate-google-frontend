@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <TranslateText msg="Welcome to Your Vue.js App"/>
+    <TranslateText />
   </div>
 </template>
 
