@@ -290,7 +290,7 @@ a {
 .floating-label {
   height: 30px;
   margin-top: -4px;
-  margin-right: 524px;
+  margin-right: 532px;
   position: absolute;
   pointer-events: none;
   top: 18px;

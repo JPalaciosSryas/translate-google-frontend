@@ -12,17 +12,22 @@
           <router-view/>
         </div>
       </div>
+      <div class="footer-options">
+        <FooterOptions />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import NavigationBar from '@/components/NavigationBar.vue';
+import FooterOptions from '@/components/FooterOptions.vue';
 
 export default {
   name: 'App',
   components: {
-    NavigationBar
+    NavigationBar,
+    FooterOptions
   }
 }
 </script>
@@ -31,14 +36,15 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
-   margin: 0px;
-   padding: 0px;
+   overflow: hidden;
+   margin: 0;
+   padding: 0;
 }
 
 #app {
   box-sizing: border-box;
   top: 0;
-  width: 1350px;
+  width: 1366px;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -57,7 +63,7 @@ export default {
 }
 
 .navInside {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-start;
   height: 108px;
@@ -66,10 +72,10 @@ export default {
 }
 
 .navInside-btns {
-  margin: 0;
+  margin: 0 auto;
   position: absolute;
   z-index: 2;
-  margin-left: 27px;
+  margin-left: 46px;
 }
 
 .navInside-btn {
@@ -94,8 +100,14 @@ export default {
 
 .view {
   margin: 72px auto 0;
-  width: 1332px;
+  width: 1370px;
   position: absolute;
   z-index: 0;
+}
+
+.footer-options {
+  width: 1332px;
+  margin: 280px auto 0;
+  padding: 0;
 }
 </style>
