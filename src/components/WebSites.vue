@@ -50,8 +50,9 @@
         </div>
         <div class="browser-container">
             <div class="web-browser">
-                <input type="text" id="web" name="web" />
-                <label for="web">A</label>
+                <input type="text" id="web" name="web" required/>
+                <span class="floating-label">Web Sites</span>
+                <label for="web"><span class="material-symbols-outlined">arrow_forward</span></label>
             </div>
         </div>
     </div>
@@ -219,6 +220,9 @@ a {
 .web-browser {
   margin: 0 auto;
   width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .web-browser h1 {
@@ -239,6 +243,10 @@ a {
   text-decoration: none;
 }
 
+.input {
+  display: block;
+}
+
 .web-browser input[type="text"] {
     border: 2px solid #1a73e8;
     border-radius: 8px;
@@ -249,12 +257,44 @@ a {
 }
 
 .web-browser input[type="text"] {
+    border: 1px solid #666;
+    border-radius: 8px;
+    width: 540px;
+    height: 24px;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.web-browser input[type="text"]:focus {
+    outline: none;
     border: 2px solid #1a73e8;
     border-radius: 8px;
     width: 540px;
     height: 24px;
     font-size: 16px;
     padding: 12px;
+}
+
+.web-browser input[type="text"]:focus ~ .floating-label,
+.web-browser input[type="text"]:not(:focus):valid ~ .floating-label {
+  top: 2px;
+  margin-top: -14px;
+  bottom: 6px;
+  font-size: 11px;
+  opacity: 1;
+  background-color: #fff;
+  padding: 2px;
+  color:  #1a73e8;
+}
+
+.floating-label {
+  height: 30px;
+  margin-top: -4px;
+  margin-right: 524px;
+  position: absolute;
+  pointer-events: none;
+  top: 18px;
+  transition: 0.2s ease all;
 }
 
 .web-browser label {
@@ -262,11 +302,18 @@ a {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  display: inline-block;
   padding: 11px 11px;
   background-color: #1a73e8;
   cursor: pointer;
   font-weight: bold;
+}
+.material-symbols-outlined {
+  color: #ddd;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
 
 </style>

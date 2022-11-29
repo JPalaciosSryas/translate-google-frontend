@@ -51,7 +51,7 @@
         <div class="browser-container">
             <div class="document-browser">
                 <h1>Choose a file</h1>
-                <p>Update a .docx, .pdf, .pptx or .xlsx file. <span><a href="https://support.google.com/translate/answer/2534559?ref_topic=7011659&hl=es">More information</a></span></p>
+                <p>Update a .docx, .pdf, .pptx or .xlsx file. <span><a href="https://support.google.com/translate/answer/2534559?ref_topic=7011659&hl=es" target="_blank">More information</a></span></p>
                 <p>
                   <label for="document">Explore files</label>
                   <input type="file" id="document" name="document" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
